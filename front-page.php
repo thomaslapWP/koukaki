@@ -17,7 +17,7 @@ get_header();
     </section>
     <section id="story" class="story" data-aos="fade-up">
 
-        <h2><span class="Animetitre">L'</span><span class="Animetitre2">histoire</span></h2>
+        <h2><span class="Animetitre" >L'</span><span class="Animetitre2">histoire</span></h2>
         <article id="" class="story__article">
             <p><?php echo get_theme_mod('story'); ?></p>
         </article>

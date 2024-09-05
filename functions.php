@@ -30,12 +30,10 @@ function theme_enqueue_styles() {
 
 add_action('wp_enqueue_scripts', 'jsLoader');
 function jsLoader() {
-    wp_enqueue_script("animationTitle", get_stylesheet_directory_uri() . '/js/animationTitle.js', array(), '1.0.0', true);
-    wp_enqueue_script("animationcarrousel", get_stylesheet_directory_uri() . '/js/animationCarrousel.js', array(), '1.0.0', true);
-    wp_enqueue_script("animationCloud", get_stylesheet_directory_uri()."/js/animationCloud.js",  array(), '1.0.0', true);
-    wp_enqueue_script("animationFloat", get_stylesheet_directory_uri()."/js/animationFloat.js", array(), '1.0.0', true);
-    wp_enqueue_script("animationMenu", get_stylesheet_directory_uri()."/js/animationMenu.js", array('jquery'), '1.0.0', true);
-    wp_enqueue_script("animationParallaxe", get_stylesheet_directory_uri()."/js/animationParallaxe.js", array(), '1.0.0', true);
+    wp_enqueue_script("animations", get_stylesheet_directory_uri() . '/js/animations.js', array(), '1.0.0', true);
+    wp_enqueue_script("titleFade", get_stylesheet_directory_uri() . '/js/titleFade.js', array(), '1.0.0', true);
+    wp_enqueue_script("carrouselConfig", get_stylesheet_directory_uri() . '/js/carrouselConfig.js', array(), '1.0.0', true);
+    wp_enqueue_script("menuNav", get_stylesheet_directory_uri()."/js/menuNav.js", array(), '1.0.0', true);
     wp_enqueue_style("aos-css", "https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css");
     wp_enqueue_script("aos-js", "https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js", array(), null, true);
 
